@@ -1,1 +1,85 @@
 /* Your code here */
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "menu_search . actions"
+    ". technologies ."
+    "date logo paper";
+}
+
+.masthead__icon-buttons {
+  font-size: 11px;
+  padding: 7px 9px;
+}
+
+.masthead__icon-buttons:hover {
+  background-color: #f7f7f5;
+}
+
+.masthead__menu {
+  align-items: center;
+  display: flex;
+  grid-area: menu_search;
+  padding-left: 20px;
+}
+
+.masthead__actions {
+  align-items: center;
+  display: flex;
+  grid-area: actions;
+  height: 50px;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.masthead__date {
+  grid-area: date;
+}
+
+.masthead__date,
+.masthead__paper {
+  align-items: flex-end;
+  display: flex;
+  font-size: 11px;
+}
+
+.masthead__technologies {
+  align-items: center;
+  display: flex;
+  grid-area: technologies;
+  justify-content: center;
+}
+
+.masthead__logo {
+  grid-area: logo;
+  padding-top: 20px;
+}
+
+.masthead__paper {
+  grid-area: paper;
+  justify-content: flex-end;
+}
+
+.masthead__technologies-group {
+  border-top: 1px solid #e2e2e2;
+  border-right: 1px solid #e2e2e2;
+  border-left: 1px solid #e2e2e2;
+  background-color: white;
+  position: relative;
+  text-align: center;
+  top: 1px;
+}
+
+.masthead__technologies span {
+  color: #6f6f6f;
+  font-size: 10px;
+  margin: 0 4px;
+  text-transform: uppercase;
+}
+
+.masthead__bottom-row {
+  border-top: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+  padding-bottom: 11px;
+}

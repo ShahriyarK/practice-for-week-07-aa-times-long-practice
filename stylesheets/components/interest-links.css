@@ -1,1 +1,64 @@
 /* Your code here */
+.interest-bar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr 2fr) 2fr 1fr 1fr;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 12px 0;
+}
+
+.interest-bar__image {
+  align-self: center;
+  justify-self: center;
+  font-weight: bold;
+  padding: 16px 0;
+}
+
+.interest-bar__image > img {
+  width: 60px;
+}
+
+.interest-bar > article {
+  align-self: stretch;
+  border-right: 1px solid #e2e2e2;
+}
+
+.interest-bar__title {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.interest-bar__story {
+  font-size: 12px;
+}
+
+.interest-bar__stock {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.interest-bar__stock-row {
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.interest-bar__stock > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.interest-bar__stock span {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.interest-bar__stock-value {
+  color: green;
+}
+
+@media screen and (max-width: 1000px) {
+  .interest-bar {
+    display: none;
+  }
+}

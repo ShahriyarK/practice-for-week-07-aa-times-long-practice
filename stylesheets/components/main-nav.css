@@ -1,1 +1,14 @@
 /* Your code here */
+.main-nav {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.main-nav__container {
+  align-items: center;
+  display: flex;
+  font-size: 12px;
+  gap: 16px;
+  padding: 8px 0;
+}

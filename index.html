@@ -1,1 +1,269 @@
 <!-- Your code here -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App Academy Times</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
+    />
+    <link rel="stylesheet" href="./stylesheets/main-styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="masthead">
+        <div class="masthead__menu">
+          <div class="masthead__icon-buttons">
+            <i class="fa fa-bars"></i>
+          </div>
+          <div class="masthead__icon-buttons">
+            <i class="fa fa-search"></i>
+          </div>
+          <div class="search-modal search-modal--hidden">
+            <input
+              type="search"
+              class="search-modal__input"
+              placeholder="Search"
+            />
+            <button class="search-model__go">Go</button>
+          </div>
+        </div>
+        <div class="masthead__actions">
+          <button>subscribe now</button>
+          <button>log in</button>
+          <div>
+            <i class="fas fa-cog"></i>
+          </div>
+          <!-- Dropdown menu -->
+          <div class="pref pref--hidden">
+            <div class="pref__section">
+              <div class="pref__section-header">Edition</div>
+              <ul>
+                <li class="pref__section-link"><a href="#">CSS</a></li>
+                <li class="pref__section-link"><a href="#">HTML</a></li>
+                <li class="pref__section-link"><a href="#">JavaScript</a></li>
+                <li class="pref__section-link"><a href="#">Python</a></li>
+              </ul>
+            </div>
+            <div class="pref__section">
+              <div class="pref__section-header">Help</div>
+              <ul>
+                <li class="pref__section-link"><a href="#">FAQ</a></li>
+                <li class="pref__section-link"><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="masthead__technologies">
+          <div class="masthead__technologies-group">
+            <span>css</span>
+            <span>html</span>
+            <span>javascript</span>
+            <span>python</span>
+          </div>
+        </div>
+        <div class="masthead__date masthead__bottom-row">
+          Tuesday, October 31, 2020
+        </div>
+        <div class="masthead__logo masthead__bottom-row">
+          <img src="./images/AA_Times_Logo.png" />
+        </div>
+        <div class="masthead__paper masthead__bottom-row">
+          <div>
+            <i class="far fa-newspaper"></i>
+            Today’s Paper
+          </div>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__container">
+          <li><a href="#">World</a></li>
+          <li><a href="#">SWE Online</a></li>
+          <li><a href="#">San Francisco</a></li>
+          <li><a href="#">New York</a></li>
+          <li><a href="#">Jumpstart</a></li>
+          <li><a href="#">Marketing</a></li>
+          <li><a href="#">Sales</a></li>
+          <li><a href="#">TalentMatch</a></li>
+          <li><a href="#">Alumni</a></li>
+          <li><a href="#">All</a></li>
+        </ul>
+      </nav>
+      <div class="interest-bar">
+        <div class="interest-bar__image">
+          <img src="./images/dog.png" />
+        </div>
+        <article>
+          <h2 class="interest-bar__title">Dog Programmers</h2>
+          <p class="interest-bar__story">
+            Dogs are learning to code at an incredible pace.
+          </p>
+        </article>
+        <div class="interest-bar__image">
+          <img src="./images/cat.png" />
+        </div>
+        <article>
+          <h2 class="interest-bar__title">Cats and Coding</h2>
+          <p class="interest-bar__story">
+            Cats are on the rise as the #1 example for coding demos.
+          </p>
+        </article>
+        <div class="interest-bar__image">
+          <img src="./images/plug.png" />
+        </div>
+        <article>
+          <h2 class="interest-bar__title">Plugging stuff In</h2>
+          <p class="interest-bar__story">Good or Bad? Find out now.</p>
+        </article>
+        <div class="interest-bar__stock">
+          <div class="interest-bar__stock-row">
+            <span>AAO</span>
+            <span class="interest-bar__stock-value">+100%</span>
+          </div>
+          <div class="interest-bar__stock-row">
+            <span>SWE</span>
+            <span class="interest-bar__stock-value">+150%</span>
+          </div>
+          <div>
+            <span>CAT</span>
+            <span class="interest-bar__stock-value">+111% </span>
+          </div>
+        </div>
+        <div class="interest-bar__image">
+          <img src="./images/sun-icon.png" />
+        </div>
+        <div class="interest-bar__image">77°F</div>
+      </div>
+    </header>
+    <main>
+      <article class="main-article">
+        <h1>How App Academy Students Change Their Lives</h1>
+        <div class="main-article__body">
+          <div class="main-article__left">
+            <h2>App Academy Instructors on React & Redux</h2>
+            <span class="article-author"
+              >By APP ACADEMY INSTRUCTIONAL TEAM</span
+            >
+            <ul>
+              <li>
+                It helps you write applications that behave consistently, run in
+                different environments (client, server, and native), and are
+                easy to test. On top of that, it provides a great developer
+                experience, such as live code editing combined with a time
+                traveling debugger.
+              </li>
+              <li>
+                The whole state of your app is stored in an object tree inside a
+                single store. The only way to change the state tree is to emit
+                an action, an object describing what happened. To specify how
+                the actions transform the state tree, you write pure reducers.
+              </li>
+            </ul>
+            <span class="article-comments">1738 Comments</span>
+          </div>
+          <div class="main-article__right">
+            <iframe
+              src="https://player.vimeo.com/video/380193367"
+              width="480"
+              height="280"
+              frameborder="0"
+              allow="autoplay; fullscreen"
+              allowfullscreen
+            ></iframe>
+            <span
+              >Warning: This video will make you want to change your
+              career</span
+            >
+          </div>
+        </div>
+      </article>
+      <article class="stories">
+        <article class="stories__story-1 stories__card">
+          <h2>Where Are They Now?</h2>
+          <span class="article-author">By APP ACADEMY ALUMNI</span>
+          <p>
+            First hand stories from App Academy graduates about transitioning to
+            engineering positions at top tech companies in San Francisco.
+          </p>
+        </article>
+        <article class="stories__story-2 stories__card">
+          <h2>Cat Academy</h2>
+          <span class="article-author"
+            >By APP ACADEMY DIRECTOR OF PRODUCTS</span
+          >
+          <p>
+            App Academy's latest product targets those interested in owning the
+            popular feline companion by providing a curated cat care curriculum.
+            Breakfast, Markov, Curie, Jet, and Freyja are all modern day
+            celebrities due to their App Academy example fame.
+          </p>
+        </article>
+      </article>
+      <div class="other-articles">
+        <article class="other-articles__opinions">
+          <header class="other-articles__opinions-header">
+            <h1>Opinions</h1>
+            <span class="article-author">By Breakfast the Cat</span>
+          </header>
+          <h2>Will Javascript ever be as easy as Python?</h2>
+          <p>
+            JavaScript continues to advance with the newly released EcmaScript8
+            but it still doesn't quite read like Python.
+          </p>
+          <span class="article-comments">299 Comments</span>
+        </article>
+        <article class="other-articles__operations">
+          <header class="other-articles__operations-header">
+            <span>Operations</span>
+            <h1>App Academy New York Has A Brand New Office</h1>
+            <span class="article-author">By NY OPERATIONS</span>
+          </header>
+          <img src="images/new_office.jpg" />
+          <p>
+            The new space features hardwood floors and brick walls for a modern
+            technology space with an aura for learning.
+          </p>
+          <span class="article-comments">172 Comments</span>
+        </article>
+        <aside class="suggestions">
+          <div class="suggestions__left">
+            <div>
+              <span class="article-author">Torvalds</span>
+              <h2>I Was Almost Wrong</h2>
+            </div>
+            <div>
+              <span class="article-author">Knuth</span>
+              <h2>Art of Programming</h2>
+            </div>
+            <div>
+              <span class="article-author">Lovelace</span>
+              <h2>The First Algorithm</h2>
+            </div>
+            <div>
+              <span class="article-author">Hopper</span>
+              <h2>The First Bug</h2>
+            </div>
+          </div>
+          <div class="suggestions__right">
+            <div>
+              <span class="article-author">Thompson</span>
+              <h2>Go C Unix</h2>
+            </div>
+            <div>
+              <span class="article-author">Carmack</span>
+              <h2>My Virtual Reality</h2>
+            </div>
+            <div>
+              <span class="article-author">Stallman</span>
+              <h2>Free Speech Not Free Coffee</h2>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="./scripts/event-handling.js"></script>
+  </body>
+</html>
